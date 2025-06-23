@@ -165,8 +165,8 @@ footer a:hover {
 
 .ventaja img {
   width: 40px;
-  height: 40px;
-  flex-shrink: 0;
+  height: auto;
+  margin-top: 4px;
 }
 
 .ventaja h3 {
@@ -180,3 +180,4 @@ footer a:hover {
   line-height: 1.4;
   color: #444;
 }
+
