@@ -90,7 +90,9 @@ footer a:hover {
 .logo {
   width: 120px;
   height: auto;
-  margin-bottom: 1rem;
+  margin: 0 auto 1.5rem;
+  display: block;
 }
+
 
 
