@@ -133,15 +133,14 @@ footer a:hover {
 }
 
 #ventajas {
-  max-width: 1000px;
-  margin: 4rem auto;
-  padding: 2rem;
+  background: #f4f4f4;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
 #ventajas h2 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
 }
 
 .logo-mini {
@@ -150,37 +149,34 @@ footer a:hover {
 }
 
 .ventajas-grid {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.ventaja {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 2rem;
   text-align: left;
 }
 
-.ventaja span {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 0.8rem;
-  color: #E67E22;
+.ventaja {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.ventaja img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
 .ventaja h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
   color: #2C3E50;
 }
 
 .ventaja p {
   font-size: 0.95rem;
   line-height: 1.4;
+  color: #444;
 }
-
-
-
