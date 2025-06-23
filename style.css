@@ -139,4 +139,14 @@ footer a:hover {
 
 @media (max-width: 768px) {
   .ventajas-grid {
+    grid-template-columns: 1fr;
+  }
 
+  .ventaja {
+    flex-direction: row;
+  }
+
+  .ventaja img {
+    width: 32px;
+  }
+}
