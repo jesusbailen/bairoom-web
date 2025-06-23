@@ -227,9 +227,14 @@ footer a:hover {
 
 .banner .imagen img {
   width: 100%;
+  max-width: 500px;
   height: auto;
   display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto;
 }
+
 
 .btn-claro {
   background: #32c18c;
