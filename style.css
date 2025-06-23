@@ -176,3 +176,73 @@ footer a:hover {
   transform: scale(1.02); /* escala suave al pasar el ratón */
 }
 
+.banner {
+  background: #fff;
+  padding: 4rem 1rem;
+}
+
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.banner .texto {
+  flex: 1 1 400px;
+  padding: 2rem;
+  text-align: left;
+}
+
+.banner .texto h2 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2C3E50;
+}
+
+.banner .texto hr {
+  width: 40px;
+  height: 3px;
+  background: #32c18c;
+  border: none;
+  margin: 1rem 0;
+}
+
+.banner .texto p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.banner .imagen {
+  flex: 1 1 400px;
+}
+
+.banner .imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn-claro {
+  background: #32c18c;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-claro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
