@@ -94,5 +94,42 @@ footer a:hover {
   display: block;
 }
 
+.hero {
+  background: url('hero-elche.jpg') center/cover no-repeat;
+  position: relative;
+  padding: 4rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+.hero .logo,
+.hero .hero-text,
+.hero .btn {
+  position: relative;
+  z-index: 1;
+}
+
+.hero .logo {
+  width: 100px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero .btn {
+  padding: 0.8rem 1.6rem;
+}
 
 
