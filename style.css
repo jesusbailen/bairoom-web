@@ -115,6 +115,15 @@ footer a:hover {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+  background: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* sombra suave */
+  transition: box-shadow 0.3s ease;
+}
+
+.ventaja:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .ventaja img {
@@ -150,3 +159,20 @@ footer a:hover {
     width: 32px;
   }
 }
+
+.btn {
+  display: inline-block;
+  background: #E67E22;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #d35400;
+  transform: scale(1.02); /* escala suave al pasar el ratón */
+}
+
