@@ -1,11 +1,57 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Century Gothic', 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #F8F9FA, #E0E0E0);
   color: #333;
   line-height: 1.6;
 }
+
+/* --------- NAVBAR --------- */
+
+.navbar {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-nav {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #2C3E50;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Century Gothic', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #E67E22;
+}
+
+/* --------- HERO / HEADER --------- */
 
 header.hero {
   background: linear-gradient(135deg, #2C3E50, #34495E);
@@ -21,9 +67,10 @@ header.hero {
 }
 
 .hero-text p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  display: none; /* Oculta frase anterior */
 }
+
+/* --------- BOTONES --------- */
 
 .btn {
   display: inline-block;
@@ -33,12 +80,31 @@ header.hero {
   margin-top: 1rem;
   border-radius: 5px;
   text-decoration: none;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
   background: #d35400;
+  transform: scale(1.02);
 }
+
+.btn-claro {
+  background: #32c18c;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-claro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --------- SECCIONES --------- */
 
 section {
   max-width: 800px;
@@ -51,6 +117,8 @@ section h2 {
   margin-bottom: 1rem;
   color: #1A1A1A;
 }
+
+/* --------- LISTAS --------- */
 
 ol, ul {
   padding-left: 1.5rem;
@@ -65,6 +133,8 @@ li {
 li:hover {
   transform: translateX(5px);
 }
+
+/* --------- FOOTER --------- */
 
 footer {
   background: #2C3E50;
@@ -83,7 +153,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* ---- SECCIÓN VENTAJAS ---- */
+/* --------- VENTAJAS --------- */
 
 #ventajas {
   background: #f4f4f4;
@@ -107,7 +177,7 @@ footer a:hover {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3.5rem 2rem; /* MÁS ESPACIO ENTRE FILAS */
+  gap: 3.5rem 2rem;
   text-align: left;
 }
 
@@ -118,7 +188,7 @@ footer a:hover {
   background: white;
   padding: 1.2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* sombra suave */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.3s ease;
 }
 
@@ -144,37 +214,7 @@ footer a:hover {
   color: #444;
 }
 
-/* ✅ RESPONSIVE para móvil */
-
-@media (max-width: 768px) {
-  .ventajas-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .ventaja {
-    flex-direction: row;
-  }
-
-  .ventaja img {
-    width: 32px;
-  }
-}
-
-.btn {
-  display: inline-block;
-  background: #E67E22;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.btn:hover {
-  background: #d35400;
-  transform: scale(1.02); /* escala suave al pasar el ratón */
-}
+/* --------- BANNER INQUILINO --------- */
 
 .banner {
   background: #fff;
@@ -235,59 +275,18 @@ footer a:hover {
   margin: 0 auto;
 }
 
+/* --------- RESPONSIVE --------- */
 
-.btn-claro {
-  background: #32c18c;
-  color: white;
-  font-weight: bold;
-  padding: 0.8rem 1.6rem;
-  border-radius: 6px;
-  display: inline-block;
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+@media (max-width: 768px) {
+  .ventajas-grid {
+    grid-template-columns: 1fr;
+  }
 
-.btn-claro:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
+  .ventaja {
+    flex-direction: row;
+  }
 
-.navbar {
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo-nav {
-  height: 40px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #2C3E50;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: #E67E22;
+  .ventaja img {
+    width: 32px;
+  }
 }
