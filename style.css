@@ -28,8 +28,9 @@ body {
 
 .logo {
   height: 28px;
-  object-fit: contain;
+  max-width: 150px;
 }
+
 
 .nav-links {
   display: flex;
