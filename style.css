@@ -24,13 +24,17 @@ body {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0.5rem 0; /* mejora verticalmente la distribución */
 }
 
+
 .logo {
-  height: auto;
-  width: 220px;
+  height: 70px;
+  width: auto;
   object-fit: contain;
+  display: block;
 }
+
 
 
 .nav-links {
