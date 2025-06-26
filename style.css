@@ -14,9 +14,13 @@ body {
 
 /* CABECERA */
 .navbar {
-  background-color: #32C18C !important; /* fuerza el color */ 
-  padding: 1rem 2rem;
+  background-color: #32C18C !important;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
+
 
 .navbar-container {
   display: flex;
