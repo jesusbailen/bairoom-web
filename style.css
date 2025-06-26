@@ -1,28 +1,34 @@
 /* Tipografía y colores corporativos */
-body {
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y colores corporativos */
+body {
   font-family: 'Century Gothic', 'Segoe UI', sans-serif;
-  background-color: #FAFAFA;
+  background-color: #FAFAFA; /* fondo general */
   color: #2C3E50;
 }
 
 /* CABECERA */
 .navbar {
-  background-color: #32C18C;
-  padding: 0.8rem 2rem;
+  background-color: #32C18C; /* VERDE JADE */
+  padding: 1rem 2rem;
 }
 
 .navbar-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .logo {
-  height: 30px;
+  height: 28px;
   object-fit: contain;
 }
 
@@ -34,16 +40,16 @@ body {
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 0.9rem;
   text-transform: uppercase;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
 /* SECCIÓN HERO */
 .hero {
-  background-color: #32C18C;
+  background-color: #32C18C; /* VERDE JADE */
   color: white;
-  padding: 2.5rem 2rem;
+  padding: 3rem 2rem;
 }
 
 .hero-content {
@@ -52,12 +58,12 @@ body {
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
+  line-height: 1.3;
 }
 
 .hero p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
-
