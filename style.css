@@ -55,9 +55,9 @@ body {
   padding: 3rem 2rem;
 }
 
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
+.hero-content p {
+  font-size: 1.15rem; /* Prueba también con 1.2rem si quieres más */
+  line-height: 1.7;
 }
 
 .hero h1 {
@@ -90,11 +90,9 @@ body {
   border-radius: 8px;
 }
 
-.propietarios-content {
-  max-width: 800px;
-  font-family: 'Poppins', sans-serif;
-  color: #2C3E50;
-  text-align: left;
+.propietarios-content p {
+  font-size: 1.1rem; /* Ajusta al gusto: 1.1rem, 1.2rem, etc. */
+  line-height: 1.7;
 }
 
 .propietarios h2 {
