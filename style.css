@@ -27,10 +27,11 @@ body {
 }
 
 .logo {
-  height: 48px;
+  height: 60px;
+  max-height: 100px;
   width: auto;
-  object-fit: contain;
 }
+
 
 .nav-links {
   display: flex;
