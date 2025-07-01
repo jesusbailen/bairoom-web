@@ -14,9 +14,10 @@ body {
 
 /* CABECERA */
 .navbar {
-  background-color: #32C18C;
-  padding: 1rem 2rem;
+  background-color: #32C18C !important;
+  padding: 0.5rem 2rem; /* <--- ajusta esto */
 }
+
 
 .navbar-container {
   display: flex;
