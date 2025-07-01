@@ -29,6 +29,7 @@ body {
 .logo {
   height: 220px !important;
   width: auto !important;
+  max-height: none !important;
 }
 
 
