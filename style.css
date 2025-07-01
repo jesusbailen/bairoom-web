@@ -71,42 +71,50 @@ body {
   font-size: 1rem;
   line-height: 1.6;
 }
-/* SECCIÓN PROPIETARIOS */
+/* Espaciado general entre secciones */
+section {
+  padding: 4rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Para las secciones con imagen + texto */
 .propietarios {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin: 80px auto;
-  max-width: 1100px;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
+/* Invertir orden para alternar diseño */
+.propietarios.invertida {
+  flex-direction: row-reverse;
+}
+
+/* Imagen lateral */
 .propietarios-img {
   flex: 1;
   min-width: 300px;
-  height: 300px;
+  height: 280px;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
+/* Contenido de texto */
 .propietarios-content {
   flex: 1;
   min-width: 300px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: #2c3e50;
 }
 
 .propietarios-content h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #2c3e50;
-}
-
-.propietarios-content p {
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2C3E50;
 }
 
