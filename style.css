@@ -27,10 +27,10 @@ body {
 
 
 .logo {
-  height: 220px;
-  max-height: 100px;
-  width: auto;
+  height: 220px !important;
+  width: auto !important;
 }
+
 
 
 .nav-links {
