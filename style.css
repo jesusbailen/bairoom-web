@@ -78,74 +78,78 @@ section {
   margin: 0 auto;
 }
 
-/* Para las secciones con imagen + texto */
+/* PROPIETARIOS */
 .propietarios {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
+  background-color: #ffffff;
+  padding: 4rem 2rem;
 }
 
-/* Invertir orden para alternar diseño */
-.propietarios.invertida {
-  flex-direction: row-reverse;
-}
-
-/* Imagen lateral */
 .propietarios-img {
-  flex: 1;
-  min-width: 300px;
-  height: 280px;
+  background-image: url('foto-habitacion.jpg');
   background-size: cover;
   background-position: center;
+  height: 320px;
+  width: 100%;
+  max-width: 1000px;
   border-radius: 12px;
+  margin-bottom: 2rem;
 }
 
-/* Contenido de texto */
 .propietarios-content {
-  flex: 1;
-  min-width: 300px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #2c3e50;
-}
-
-.propietarios-content h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #2C3E50;
-}
-/* SECCIÓN VENTAJAS */
-.ventajas {
-  background-color: #FAFAFA;
-  padding: 4rem 1rem;
+  max-width: 800px;
   text-align: center;
 }
 
-.ventajas-content {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.ventajas h2 {
+.propietarios-content h2 {
   font-size: 2.2rem;
   color: #2C3E50;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.ventajas .subtitulo {
+.propietarios-content p {
   font-size: 1.1rem;
   color: #2C3E50;
-  margin-bottom: 3rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
-/* Grid de ventajas (vacío por ahora, pero preparado) */
-.ventajas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  justify-items: center;
+/* VENTAJAS */
+.ventajas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAFAFA;
+  padding: 4rem 2rem;
 }
 
+.ventajas-img {
+  background-image: url('foto-habitacion.jpg'); /* Cámbiala si quieres */
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.ventajas-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.ventajas-content h2 {
+  font-size: 2.2rem;
+  color: #2C3E50;
+  margin-bottom: 1rem;
+}
+
+.ventajas-content p {
+  font-size: 1.1rem;
+  color: #2C3E50;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
