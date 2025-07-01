@@ -52,15 +52,15 @@ body {
 .hero {
   background-color: #32C18C;
   color: white;
-  padding: 3rem 2rem;
+  padding: 6rem 2rem;
+  width: 100%;
 }
 
-.hero-content p {
-  font-size: 1.2rem; /* Aumenta desde el 1rem por defecto */
-  line-height: 1.7;
-  max-width: 800px;
+.hero-content {
+  max-width: 100%; /* elimina la limitación */
+  margin: 0 auto;
+  text-align: left;
 }
-
 .hero h1 {
   font-size: 2.5rem;
   line-height: 1.3;
