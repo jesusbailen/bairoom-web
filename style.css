@@ -66,4 +66,38 @@ body {
   font-size: 1rem;
   line-height: 1.6;
 }
+/* SECCIÓN PROPIETARIOS */
+.propietarios {
+  background-color: #FAFAFA;
+  padding: 4rem 2rem;
+}
+
+.propietarios-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.propietarios-img {
+  background-color: #FAD4D4; /* color de fondo temporal como en la imagen */
+  height: 250px;
+  border-radius: 4px;
+}
+
+.propietarios-texto h2 {
+  color: #2C3E50;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.propietarios-texto p {
+  color: #2C3E50;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
 
