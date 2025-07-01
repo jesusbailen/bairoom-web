@@ -81,7 +81,10 @@ body {
 }
 
 .propietarios-img {
-  background-color: #FAD4D4; /* color de fondo temporal como en la imagen */
+  background-image: url('foto-habitacion.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 250px;
   border-radius: 4px;
 }
