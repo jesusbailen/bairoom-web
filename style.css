@@ -48,13 +48,11 @@ body, html {
   color: white;
   padding: 6rem 2rem;
   width: 100%;
-  margin: 0;
 }
 
 .hero-content {
-  max-width: none;
-  margin: 0;
-  padding: 0;
+  max-width: 1100px;
+  margin: 0 auto;
   text-align: left;
 }
 
@@ -70,36 +68,21 @@ body, html {
   max-width: 900px;
 }
 
-/* SECCIONES COMUNES */
+/* SECCIONES GENERALES */
 section {
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
   max-width: 1100px;
   margin: 0 auto;
+  text-align: left;
 }
 
 /* PROPIETARIOS */
 .propietarios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #ffffff;
-  padding: 4rem 2rem;
-}
-
-.propietarios-img {
-  background-image: url('foto-habitacion.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 320px;
-  width: 100%;
-  max-width: 1000px;
-  border-radius: 12px;
-  margin-bottom: 2rem;
 }
 
 .propietarios-content {
   max-width: 800px;
-  text-align: center;
 }
 
 .propietarios-content h2 {
@@ -117,16 +100,11 @@ section {
 
 /* VENTAJAS */
 .ventajas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #FAFAFA;
-  padding: 4rem 2rem;
 }
 
 .ventajas-content {
   max-width: 800px;
-  text-align: center;
 }
 
 .ventajas-content h2 {
@@ -146,7 +124,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 2rem;
 }
 
@@ -165,3 +143,4 @@ section {
   font-size: 1rem;
   color: #2C3E50;
 }
+
