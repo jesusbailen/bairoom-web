@@ -56,8 +56,9 @@ body {
 }
 
 .hero-content p {
-  font-size: 1.15rem; /* Prueba también con 1.2rem si quieres más */
+  font-size: 1.2rem; /* Aumenta desde el 1rem por defecto */
   line-height: 1.7;
+  max-width: 800px;
 }
 
 .hero h1 {
@@ -91,9 +92,9 @@ body {
 }
 
 .propietarios-content p {
-  font-size: 1.1rem; /* Ajusta al gusto: 1.1rem, 1.2rem, etc. */
-  line-height: 1.7;
-}
+  font-size: 1.15rem; /* Puedes subir a 1.2rem si quieres más tamaño */
+  line-height: 1.6;
+  color: #2C3E50; /* Tu color de texto principal */
 
 .propietarios h2 {
   font-size: 2.2rem;
