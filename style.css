@@ -117,4 +117,35 @@ section {
   margin-bottom: 1rem;
   color: #2C3E50;
 }
+/* SECCIÓN VENTAJAS */
+.ventajas {
+  background-color: #FAFAFA;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.ventajas-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ventajas h2 {
+  font-size: 2.2rem;
+  color: #2C3E50;
+  margin-bottom: 0.5rem;
+}
+
+.ventajas .subtitulo {
+  font-size: 1.1rem;
+  color: #2C3E50;
+  margin-bottom: 3rem;
+}
+
+/* Grid de ventajas (vacío por ahora, pero preparado) */
+.ventajas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
 
