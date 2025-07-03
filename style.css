@@ -41,17 +41,17 @@ body, html {
   font-size: 0.9rem;
   font-weight: 500;
 }
-
 .hero {
   background-color: #32C18C;
   color: white;
   padding: 2.5rem 2rem;
-  width: 100vw;
+  width: 100vw;         /* ocupa el ancho completo del viewport */
+  max-width: none;      /* evita que se le aplique el max-width global */
   position: relative;
   left: 0;
   right: 0;
-  max-width: none;
 }
+
 
 
 
@@ -149,4 +149,7 @@ section {
   color: #2C3E50;
 }
 
+body {
+  margin: 0;
+}
 
