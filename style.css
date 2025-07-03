@@ -125,31 +125,34 @@ section {
 .ventajas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
 .ventaja-item {
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .ventaja-item img {
   width: 48px;
   height: 48px;
-  margin-top: 0.3rem;
+  flex-shrink: 0;
 }
 
 .ventaja-item h3 {
   font-size: 1.1rem;
-  color: #2C3E50;
   margin-bottom: 0.5rem;
+  color: #2C3E50;
 }
 
 .ventaja-item p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #2C3E50;
   line-height: 1.6;
+}
+eight: 1.6;
 }
 
 @media (max-width: 480px) {
