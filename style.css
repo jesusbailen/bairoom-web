@@ -46,8 +46,8 @@ body, html {
 .hero {
   background-color: #32C18C;
   color: white;
-  padding: 6rem 2rem;
-  width: 100%;
+  padding: 2.5rem 2rem;
+  width: 200%;
 }
 
 .hero-content {
