@@ -112,44 +112,37 @@ section {
 }
 
 .ventajas-content {
-  max-width: 1000px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
 }
 
 .ventajas-content h2,
 .ventajas-content p {
   text-align: center;
-}
-
-.ventajas-content p {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .ventajas-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 3rem 2rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
 }
 
 .ventaja-item {
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  gap: 1rem;
 }
 
 .ventaja-item img {
-  width: 56px;
-  height: 56px;
-  object-fit: contain;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
 }
 
 .ventaja-item h3 {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
   color: #2C3E50;
 }
@@ -160,7 +153,8 @@ section {
   line-height: 1.6;
 }
 
-@media (max-width: 480px) {
+/* Versión responsive para móviles */
+@media (max-width: 768px) {
   .ventaja-item {
     flex-direction: column;
     align-items: center;
@@ -168,6 +162,10 @@ section {
   }
 
   .ventaja-item img {
-    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .ventajas-grid {
+    gap: 2rem;
   }
 }
