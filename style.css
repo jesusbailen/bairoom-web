@@ -240,4 +240,35 @@ section {
   text-align: left;
   margin-bottom: 1.5rem;
 }
+.hero {
+  background-image: url('./img/hero-elche.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 60vh;
+}
+
+.hero-content {
+  max-width: 700px;
+  background-color: rgba(0, 0, 0, 0.4); /* para mayor legibilidad */
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Century Gothic', 'Segoe UI', sans-serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: 'Century Gothic', 'Segoe UI', sans-serif;
+}
 
