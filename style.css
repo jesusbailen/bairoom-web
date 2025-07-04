@@ -28,9 +28,10 @@ body {
   padding: 1rem 2rem;
 }
 
-.logo {
-  height: 60px;
-  width: auto;
+.logo-white {
+  filter: brightness(0) invert(1);
+  width: 60px;
+  height: auto;
 }
 
 .nav-links {
