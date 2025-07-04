@@ -30,7 +30,7 @@ body {
 
 .logo-white {
   filter: brightness(0) invert(1);
-  width: 90px;
+  width: 150px;
   height: auto;
 }
 
