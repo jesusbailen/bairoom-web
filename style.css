@@ -241,34 +241,24 @@ section {
   margin-bottom: 1.5rem;
 }
 .hero {
-  background-image: url('./img/hero-elche.jpg');
+  background-image: url('img/hero-elche.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   padding: 100px 20px;
   color: white;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 60vh;
+}
+
+.hero h2,
+.hero p {
+  color: white;
 }
 
 .hero-content {
-  max-width: 700px;
-  background-color: rgba(0, 0, 0, 0.4);
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* fondo oscuro suave para legibilidad */
   padding: 40px;
-  border-radius: 12px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  font-family: 'Century Gothic', 'Segoe UI', sans-serif;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  font-family: 'Century Gothic', 'Segoe UI', sans-serif;
+  border-radius: 15px;
 }
 
