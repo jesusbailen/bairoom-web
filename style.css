@@ -47,7 +47,6 @@ body {
   font-weight: 500;
 }
 
-/* HERO */
 .hero {
   background-image: url('img/elche2.jpg');
   background-size: cover;
@@ -56,6 +55,10 @@ body {
   padding: 100px 20px;
   color: white;
   position: relative;
+  border-radius: 20px; /* Borde redondeado */
+  overflow: hidden;    /* Recorta el contenido fuera del marco */
+  max-width: 1100px;
+  margin: 40px auto;   /* Centrado */
 }
 
 .hero::before {
@@ -64,19 +67,22 @@ body {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* oscurece ligeramente para dar contraste al texto */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(255, 255, 255, 0.8)
+  );
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4); /* o prueba 0.3 */
   padding: 40px;
   border-radius: 12px;
 }
+
 
 /* SECCIONES GENERALES */
 section {
