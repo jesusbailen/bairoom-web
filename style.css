@@ -172,85 +172,54 @@ section {
     gap: 2rem;
   }
 }
+/* PROPIEDADES GESTIONADAS */
 .propiedades {
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   padding: 4rem 2rem;
-}
-
-.propiedades-content {
-  max-width: 1100px;
-  margin: 0 auto;
   text-align: center;
 }
 
-.propiedades-content h2 {
-  font-size: 2rem;
+.titulo-seccion {
+  font-size: 2.2rem;
   color: #2C3E50;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.propiedades-content p {
-  font-size: 1.1rem;
-  color: #2C3E50;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
 }
 
 .grid-propiedades {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.card-propiedad {
-  background-color: #FAFAFA;
-  border: 1px solid #E0E0E0;
-  border-radius: 16px;
+.propiedad-card {
+  background-color: #fff;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  text-align: left;
+  box-shadow: 0 4px 8px rgba(44, 62, 80, 0.08);
+  transition: transform 0.2s ease;
 }
 
-.card-propiedad img {
+.propiedad-card:hover {
+  transform: translateY(-5px);
+}
+
+.propiedad-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
-.card-propiedad .info {
-  padding: 1rem;
-}
-
-.card-propiedad h3 {
-  font-size: 1.05rem;
+.propiedad-card h3 {
+  font-size: 1.1rem;
   color: #2C3E50;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+  margin: 1rem 0 0.5rem;
 }
 
-.iconos {
-  display: flex;
-  gap: 1.2rem;
+.propiedad-card p {
   font-size: 0.95rem;
-  color: #2C3E50;
-}
-
-/* Botón "Ver todas" */
-.ver-todas {
-  margin-top: 3rem;
-}
-
-.btn-verde {
-  background-color: #32C18C;
-  color: white;
-  text-decoration: none;
-  padding: 0.75rem 2rem;
-  font-weight: 500;
-  border-radius: 8px;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.btn-verde:hover {
-  background-color: #28a57a;
+  color: #555;
+  padding-bottom: 1rem;
 }
