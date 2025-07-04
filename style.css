@@ -255,7 +255,7 @@ section {
 
 .hero-content {
   max-width: 700px;
-  background-color: rgba(0, 0, 0, 0.4); /* para mayor legibilidad */
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 40px;
   border-radius: 12px;
 }
