@@ -226,9 +226,18 @@ section {
 .titulo-seccion {
   font-family: 'Century Gothic', 'Segoe UI', sans-serif;
   font-size: 2.2rem;
-  color: #2C3E50; /* Azul gris oscuro definido por ti */
+  color: #2C3E50;
   font-weight: 600;
   text-align: center;
   margin-bottom: 2.5rem;
+}
+
+.titulo-izquierda {
+  font-family: 'Century Gothic', 'Segoe UI', sans-serif;
+  font-size: 2.2rem;
+  color: #2C3E50;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 1.5rem;
 }
 
