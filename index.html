@@ -7,6 +7,19 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
+  <script>
+  const reseñas = document.querySelectorAll(".reseña");
+  let index = 0;
+
+  setInterval(() => {
+    reseñas[index].classList.remove("activa");
+    index = (index + 1) % reseñas.length;
+    reseñas[index].classList.add("activa");
+  }, 5000); // cambia cada 5 segundos
+</script>
+
+  
 <body>
 
 <!-- CABECERA -->
