@@ -279,7 +279,6 @@ section {
   .logo-white {
     width: 140px;
   }
-/* Reseñas estilo carrusel */
 .reseñas {
   background-color: #ffffff;
   padding: 4rem 2rem;
@@ -327,7 +326,6 @@ section {
   color: #888;
 }
 
-/* Animación horizontal infinita */
 @keyframes scroll-carousel {
   0% {
     transform: translateX(0);
@@ -337,18 +335,15 @@ section {
   }
 }
 
-/* Pausa al pasar ratón */
 .carousel-container:hover .carousel-track {
   animation-play-state: paused;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .testimonial {
     min-width: 80%;
   }
 }
-
 
   
 }
