@@ -343,6 +343,10 @@ section {
     min-width: 80%;
   }
 }
+/* Pausar animación al hacer hover */
+.carrusel-reseñas:hover .slide-track {
+  animation-play-state: paused;
+}
 
   
 }
