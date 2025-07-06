@@ -279,55 +279,76 @@ section {
   .logo-white {
     width: 140px;
   }
-/* RESEÑAS FADE */
+/* Reseñas estilo carrusel */
 .reseñas {
   background-color: #ffffff;
   padding: 4rem 2rem;
   text-align: center;
 }
 
-.contenedor-reseñas {
+.carousel-container {
+  overflow: hidden;
+  max-width: 100%;
   position: relative;
-  max-width: 700px;
-  margin: 0 auto;
-  min-height: 180px;
 }
 
-.reseña {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  padding: 2rem;
+.carousel-track {
+  display: flex;
+  animation: scroll-carousel 25s linear infinite;
+  gap: 2rem;
+}
+
+.testimonial {
   background-color: #FAFAFA;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(44, 62, 80, 0.08);
+  padding: 2rem;
+  min-width: 300px;
+  max-width: 320px;
+  flex: 0 0 auto;
+  margin: 0 auto;
 }
 
-.reseña.activa {
-  opacity: 1;
-  position: relative;
-}
-
-.reseña .estrellas {
-  color: #E67E22;
-  font-size: 1.2rem;
-  margin-bottom: 0.8rem;
-}
-
-.reseña p {
-  font-size: 1.1rem;
-  font-style: italic;
+.testimonial p {
+  font-size: 1rem;
   color: #2C3E50;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.testimonial .estrellas {
+  font-size: 1.3rem;
+  color: #E67E22;
   margin-bottom: 0.5rem;
 }
 
-.reseña span {
-  font-size: 0.95rem;
+.testimonial span {
+  font-size: 0.9rem;
   color: #888;
 }
+
+/* Animación horizontal infinita */
+@keyframes scroll-carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pausa al pasar ratón */
+.carousel-container:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial {
+    min-width: 80%;
+  }
+}
+
 
   
 }
