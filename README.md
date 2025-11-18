@@ -94,6 +94,23 @@ Se encuentra en la carpeta:
 
 ---
 
+## 📌 Funcionalidades del sistema (según requisitos del proyecto)
+
+### 👨‍💼 Administrador Bairoom
+- Gestión de usuarios y roles  
+- Alta y administración de propietarios y sus propiedades  
+- Gestión de habitaciones y disponibilidad  
+- Gestión de reservas (aceptar, rechazar o cancelar)  
+- Estadísticas básicas
+
+### 🏠 Propietario
+- Visualizar propiedades cedidas  
+- Consultar reservas (actuales, pasadas y futuras)  
+- Calendario de disponibilidad de habitaciones  
+
+---
+
+
 ## 📎 Enlaces relacionados
 
 - **Portfolio:** https://jesusbailen.github.io/portfolio/  
